@@ -43,15 +43,15 @@ function App() {
   });
 
 
-  function setNextPage() {
+  const setNextPage = () => {
     setUrl(nextUrl)
   }
 
-  function setPrevPage() {
+  const setPrevPage = () => {
     setUrl(previousUrl)
   }
 
-  function setPokemonDetail(pokemonUrl) {
+  const setPokemonDetail = (pokemonUrl) => {
     setPokemonUrl(pokemonUrl)
   }
 
