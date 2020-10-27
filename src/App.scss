@@ -1,0 +1,98 @@
+
+
+main {
+    padding: 10px;
+    text-align: center;
+    min-height: 86vh;
+
+    h1 {
+        margin: 15px auto;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+        min-width: 300px;
+        width: 90%;
+        margin: auto;
+
+        li {
+            display: flex;
+            min-width: 300px;
+            justify-content: space-between;
+            min-height: 40px;
+            margin: 10px auto;
+            font-size: 18px;
+
+            border: 1px solid black;
+            background: #e4ecf5;
+            box-shadow: 2px 2px 4px 0px black;
+
+            text-transform: capitalize;
+
+            &:hover {
+                transition: 0.3s;
+                background-color: azure;
+                cursor: pointer;
+
+                img {
+                    animation: pokeballRotation 2s infinite linear;
+                }
+            }
+
+            p {
+                margin: auto 0 auto 10px;
+            }
+
+            img {
+                width: 30px;
+
+                margin: 10px 10px 10px auto;
+            }
+
+            @keyframes pokeballRotation {
+                0% {
+                    transform: rotateZ(0deg);
+                }
+
+                25% {
+                    transform: rotateZ(90deg);
+                }
+                50% {
+                    transform: rotateZ(180deg);
+                }
+                75% {
+                    transform: rotateZ(270deg);
+                }
+
+                100% {
+                    transform: rotateZ(360deg);
+                }
+            }
+        }
+    }
+
+    button {
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: white;
+        background: #6f7b88;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.3s;
+
+        &:hover {
+            background: #828f9e;
+        }
+    }
+}
+
+footer {
+    height: 47px;
+    padding: 10px 20px;
+    background: #ed1b24;
+}

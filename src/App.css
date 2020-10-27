@@ -1,38 +1,130 @@
-.App {
+main {
+  padding: 10px;
   text-align: center;
+  min-height: 86vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main h1 {
+  margin: 15px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  min-width: 300px;
+  width: 90%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 40px;
+  margin: 10px auto;
+  font-size: 18px;
+  border: 1px solid black;
+  background: #e4ecf5;
+  -webkit-box-shadow: 2px 2px 4px 0px black;
+          box-shadow: 2px 2px 4px 0px black;
+  text-transform: capitalize;
+}
+
+main section li:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: azure;
+  cursor: pointer;
+}
+
+main section li:hover img {
+  -webkit-animation: pokeballRotation 2s infinite linear;
+          animation: pokeballRotation 2s infinite linear;
+}
+
+main section li p {
+  margin: auto 0 auto 10px;
+}
+
+main section li img {
+  width: 30px;
+  margin: 10px 10px 10px auto;
+}
+
+@-webkit-keyframes pokeballRotation {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(270deg);
+            transform: rotateZ(270deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes pokeballRotation {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(270deg);
+            transform: rotateZ(270deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+main button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
   color: white;
+  background: #6f7b88;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+main button:hover {
+  background: #828f9e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  height: 47px;
+  padding: 10px 20px;
+  background: #ed1b24;
 }
+/*# sourceMappingURL=App.css.map */

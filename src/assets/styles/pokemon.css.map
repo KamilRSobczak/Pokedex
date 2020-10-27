@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,GAAG;EAEV,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "pokemon.scss"
+    ],
+    "names": [],
+    "file": "pokemon.css"
+}
