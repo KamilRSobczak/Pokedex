@@ -1,4 +1,4 @@
 Simple Pokedex created with React.js, SASS/SCSS, HTML.
 Project uses *pokemon API* from *https://pokeapi.co/*.
 
-Play with the portal on: https://kamilrsobczak.github.io/Pokedex/
+You can open this project by installing them *npm install* and starting them *npm start*.
